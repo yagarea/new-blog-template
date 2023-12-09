@@ -20,9 +20,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      # Jekyll Picture Tag requires libvips libraries for resizing images, which must be installed
-      - name: Install JPT's dependencies
-        run: sudo apt-get install libvips-tools
 
       # Put repository source onto the runner so we can build it
       - name: Checkout
